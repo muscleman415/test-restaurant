@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.netease.poemQuery">
+	<select id="getPoems"  resultType="com.netease.poem">
+		select *
+		from poems
+		<trim prefix="WHERE" prefixOverrides="AND |OR ">
+		<if test="title != null">
+		title like CONCAT('%',#{title},'%')
+		</if>
+        <if test="author != null">
+		and author like CONCAT('%',#{author},'%')
+		</if>
+		<if test="content_detail != null">
+		and content_detail like CONCAT('%',#{content_detail},'%')
+		</if>
+		</trim>
+
+	</select>
+
+</mapper>

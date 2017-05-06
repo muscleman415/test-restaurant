@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [23/Apr/2017:00:03:35 +0800] "POST /Restaurant/query HTTP/1.1" 200 715 http-bio-8080-exec-2 416
+0:0:0:0:0:0:0:1 - - [23/Apr/2017:00:03:59 +0800] "POST /Restaurant/query HTTP/1.1" 200 701 http-bio-8080-exec-3 24
+0:0:0:0:0:0:0:1 - - [23/Apr/2017:00:04:07 +0800] "POST /Restaurant/query HTTP/1.1" 200 707 http-bio-8080-exec-4 19
+0:0:0:0:0:0:0:1 - - [23/Apr/2017:00:04:19 +0800] "POST /Restaurant/query HTTP/1.1" 200 704 http-bio-8080-exec-5 46
